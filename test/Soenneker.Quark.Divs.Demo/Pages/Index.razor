@@ -1,0 +1,25 @@
+﻿@page "/"
+@using Microsoft.Extensions.Logging
+
+@inject ILogger<Index> Logger
+
+<img src="https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png" />
+<h1>Soenneker.Quark.Divs demo</h1>
+<p>This page demonstrates some of the common usages for the interop library.</p>
+<br />
+
+<hr />
+
+<div>
+    <h2>Demo Pages</h2>
+    <p><a href="/demo">View Div Component Demo</a></p>
+    <p><a href="/margin-demo">View Margin System Demo</a></p>
+    <p><a href="/padding-demo">View Padding System Demo</a></p>
+</div>
+
+@code{
+
+    protected override void OnInitialized()
+    {
+    }
+}

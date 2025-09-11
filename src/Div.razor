@@ -1,0 +1,14 @@
+@using Microsoft.AspNetCore.Components.Web
+@inherits Element
+
+<div @attributes="BuildAttributes()"
+     @onclick="HandleClick"
+     @ondblclick="HandleDoubleClick"
+     @onmouseover="HandleMouseOver"
+     @onmouseout="HandleMouseOut"
+     @onkeydown="HandleKeyDown"
+     @onfocus="HandleFocus"
+     @onblur="HandleBlur"
+     @ref="ElementRef" >
+	@ChildContent
+</div>
