@@ -1,10 +1,10 @@
 @page "/demo"
-@using Soenneker.Quark.Enums.DisplayTypes
-@using Soenneker.Quark.Enums.Visibilities
-@using Soenneker.Quark.Enums.Floats
-@using Soenneker.Quark.Enums.VerticalAligns
-@using Soenneker.Quark.Enums.TextOverflows
-@using Soenneker.Quark.Enums.Shadows
+@using Soenneker.Quark.Components.BoxShadow
+@using Soenneker.Quark.Components.Display
+@using Soenneker.Quark.Components.Float
+@using Soenneker.Quark.Components.VerticalAlign
+@using Soenneker.Quark.Components.Visibility
+@using Soenneker.Quark.Dtos.Colors
 
 <PageTitle>Quark Divs Demo</PageTitle>
 
@@ -24,19 +24,19 @@
 <div class="demo-section">
     <h2>CSS Display Properties</h2>
     
-    <Div Display="DisplayType.Block" Class="demo-box">
+    <Div Display="Display.Block" Class="demo-box">
         Display: Block
     </Div>
     
-    <Div Display="DisplayType.Inline" Class="demo-box">
+    <Div Display="Display.Inline" Class="demo-box">
         Display: Inline
     </Div>
     
-    <Div Display="DisplayType.Flex" Class="demo-box">
+    <Div Display="Display.Flex" Class="demo-box">
         Display: Flex
     </Div>
     
-    <Div Visibility="Visibility.Hidden" Class="demo-box">
+    <Div Visibility="Visibility.Visible" Class="demo-box">
         This div is hidden
     </Div>
     
@@ -48,17 +48,25 @@
         Float: Right
     </Div>
     
+    <Div TextColor="Color.Primary" Class="demo-box">
+	    Text color: Primary
+    </Div>
+	
+    <Div TextColor="@("#FFFFFF")" Class="demo-box">
+	    Text color: #FFFFFF
+    </Div>
+
     <Div VerticalAlign="VerticalAlign.Top" Class="demo-box">
         Vertical Align: Top
     </Div>
     
-    <Div TextOverflow="TextOverflow.Ellipsis" 
+@*     <Div TextOverflow="TextOverflow.Ellipsis" 
          Style="width: 200px; white-space: nowrap; overflow: hidden;"
          Class="demo-box">
         This is a very long text that should be truncated with ellipsis
-    </Div>
+    </Div> *@
     
-    <Div BoxShadow="Shadow.Inset" Class="demo-box">
+    <Div BoxShadow="BoxShadow.Base" Class="demo-box">
         Box Shadow: Inset
     </Div>
 </div>
