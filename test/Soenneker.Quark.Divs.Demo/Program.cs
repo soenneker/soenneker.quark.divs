@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components.Web;
@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.JSInterop;
 using Serilog;
 using Serilog.Debugging;
-using Soenneker.Quark.Themes.Registrars;
+using Soenneker.Quark;
 using Soenneker.Serilog.Sinks.Browser.Blazor.Registrars;
 
 namespace Soenneker.Quark.Divs.Demo;
