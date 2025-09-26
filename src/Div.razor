@@ -3,3 +3,7 @@
 <div @attributes="BuildAttributes()" >
 	@ChildContent
 </div>
+
+@code {
+	public override string? Name { get; set; } = "Div";
+}
